@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors'); 
+const cors = require('cors');
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
@@ -12,7 +12,6 @@ async function getanswer(question) {
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text();
-    // console.log(text);
     return text;
   }
   
