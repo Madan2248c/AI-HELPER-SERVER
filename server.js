@@ -1,7 +1,5 @@
-require('dotenv').config({ path: './api.env' });
 const express = require('express');
 const cors = require('cors'); 
-const apiKey = process.env.API_KEY;
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
